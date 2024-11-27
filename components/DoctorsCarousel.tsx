@@ -1,6 +1,5 @@
 'use client'
 import Image from "next/image";
-import {useState} from "react";
 import {Carousel, CarouselContent, CarouselItem} from "./ui/carousel";
 
 export default function DoctorsCarousel() {
