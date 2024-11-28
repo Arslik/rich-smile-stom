@@ -65,7 +65,7 @@ export default function WhyUsSection() {
                         href="https://wa.me/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-6 py-3 text-white bg-teal-500 rounded-lg hover:bg-teal-600 transition"
+                        className="inline-block px-6 py-3 text-white bg-[#03989E] rounded-lg hover:bg-teal-600 transition"
                     >
                         Написать в WhatsApp
                     </a>
