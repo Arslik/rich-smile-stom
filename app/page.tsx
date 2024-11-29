@@ -9,10 +9,12 @@ import DentalHealthSection from "@/components/DentalHealthSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import OnlineBookingSection from "@/components/OnlineBookingSection";
 import Footer from "@/components/Footer";
+import StickyTopBar from "@/components/StickyTopBar";
 
 export default function Home() {
   return (
     <div>
+      <StickyTopBar />
       <Header />
       <HeroSection />
       <ContactInfo />
