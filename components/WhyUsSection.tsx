@@ -29,7 +29,7 @@ export default function WhyUsSection() {
     ];
 
     return (
-        <section className="bg-white py-16">
+        <section id="why-us-section" className="bg-white py-16">
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <div className="text-center">

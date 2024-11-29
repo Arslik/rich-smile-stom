@@ -12,7 +12,7 @@ export default function DoctorsCarousel() {
     ];
 
     return (
-        <section className="bg-gray-50 py-16">
+        <section id="doctors-carousel-section" className="bg-gray-50 py-16">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-gray-800 text-center">Наши доктора</h2>
                 <p className="text-gray-600 text-center mt-2">Наши доктора</p>

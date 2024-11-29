@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function ContactInfo() {
     return (
-        <section className="bg-gray-50 py-12">
+        <section id="contact-info-section" className="bg-gray-50 py-12">
             <div className="container mx-auto flex flex-col space-y-6 lg:flex-row lg:space-y-0 items-center justify-between">
                 {/* Working Hours */}
                 <div className="flex flex-col sm:flex-row items-center sm:space-x-4 text-center sm:text-left">

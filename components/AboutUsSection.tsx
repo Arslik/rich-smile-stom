@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function AboutUsSection() {
     return (
-        <section className="bg-white py-16">
+        <section id="about-us-section" className="bg-white py-16">
             <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-y-12 lg:gap-x-16 items-center px-4 sm:px-6 lg:px-8">
                 {/* Left Section: Image with Overlay */}
                 <div className="relative">

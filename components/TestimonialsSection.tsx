@@ -9,7 +9,7 @@ export default function TestimonialsSection() {
     ];
 
     return (
-        <section className="bg-gray-50 py-16">
+        <section id="testimonials-section" className="bg-gray-50 py-16">
             <div className="container mx-auto">
                 <h2 className="text-3xl font-bold text-gray-800 text-center">Отзывы</h2>
                 <p className="text-gray-600 text-center mt-2">Что говорят наши пациенты</p>
