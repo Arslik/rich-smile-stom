@@ -11,6 +11,7 @@ import OnlineBookingSection from "@/components/OnlineBookingSection";
 import Footer from "@/components/Footer";
 import StickyTopBar from "@/components/StickyTopBar";
 import ScrollToTop from "@/components/ScrollToTop";
+import MapSection from "@/components/MapSection";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <DentalHealthSection />
       <TestimonialsSection />
       <OnlineBookingSection />
+      <MapSection />
       <Footer />
       <ScrollToTop />
     </div>
