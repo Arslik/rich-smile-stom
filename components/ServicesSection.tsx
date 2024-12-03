@@ -11,14 +11,14 @@ export default function ServicesSection() {
         },
         {
             title: "Ортопедия",
-            description: "Услуги в ортодонтии.",
+            description: "Услуги в ортопедии.",
             image: "/temp/orthopedics.png",
             link: "Подробнее",
             whatsappText: "Написать в WhatsApp",
         },
         {
             title: "Хирургия",
-            description: "Услуги в ортодонтии.",
+            description: "Услуги в хирургии.",
             image: "/temp/surgery.png",
             link: "Подробнее",
             whatsappText: "Написать в WhatsApp",
@@ -29,14 +29,29 @@ export default function ServicesSection() {
         <section id="services-section" className="bg-white py-16">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Header Section */}
-                <div className="flex flex-row sm:flex-row items-center justify-between mb-8 space-y-4 sm:space-y-0">
-                    <div>
+                <div className="flex flex-col sm:flex-row items-center justify-between mb-8 space-y-4 sm:space-y-0">
+                    <div className="text-center sm:text-left">
                         <h2 className="text-3xl font-bold text-gray-800">Услуги</h2>
                         <p className="text-gray-600">Популярные услуги</p>
                     </div>
-                    <button className="bg-[#03989E] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition">
-                        Позвонить
-                    </button>
+                    <div className="flex flex-wrap gap-4 justify-center sm:justify-end">
+                        <a href="tel:+77002674866">
+                            <button
+                                className="bg-[#03989E] mt-4 text-white px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-600 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                                Позвонить
+                            </button>
+                        </a>
+                        <a
+                            href="https://wa.me/+77002674866"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button
+                                className="border border-[#03989E] mt-4 text-teal-500 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-50 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                                Написать в WhatsApp
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 {/* Services Grid */}
@@ -77,7 +92,7 @@ export default function ServicesSection() {
 
                             {/* WhatsApp Link */}
                             <a
-                                href="#"
+                                href="https://wa.me/+77002674866"
                                 className="text-[#03989E] font-medium hover:underline mt-4 inline-block"
                             >
                                 {service.whatsappText} →

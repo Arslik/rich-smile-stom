@@ -16,8 +16,8 @@ export default function ContactInfo() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold text-gray-800 mt-4 sm:mt-0">Часы работы</h3>
-                        <p className="text-gray-600">Пн–Пт</p>
-                        <p className="text-gray-600">(9:00 до 21:00)</p>
+                        <p className="text-gray-600">Ежедневно</p>
+                        <p className="text-gray-600">Круглосуточно</p>
                     </div>
                 </div>
 
@@ -33,20 +33,28 @@ export default function ContactInfo() {
                     </div>
                     <div>
                         <h3 className="text-lg font-semibold text-gray-800 mt-4 sm:mt-0">Наш номер</h3>
-                        <p className="text-gray-600">+77771231234</p>
-                        <p className="text-gray-600">richstom@gmail.com</p>
+                        <p className="text-gray-600">+77002674866</p>
                     </div>
                 </div>
 
                 {/* Call and WhatsApp Buttons */}
-                <div className="space-x-4 ">
-                    <button className="bg-[#03989E] text-white px-6 py-3 rounded-lg hover:bg-teal-600 transition">
-                        Позвонить
-                    </button>
-                    <button
-                        className="border border-[#03989E] text-teal-500 px-6 py-3 rounded-lg hover:bg-teal-50 transition mt-4 sm:mt-0">
-                        Написать в WhatsApp
-                    </button>
+                <div className="flex flex-wrap gap-4 justify-center sm:justify-end">
+                    <a href="tel:+77002674866">
+                        <button
+                            className="bg-[#03989E] mt-4 text-white px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-600 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                            Позвонить
+                        </button>
+                    </a>
+                    <a
+                        href="https://wa.me/+77002674866"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button
+                            className="border border-[#03989E] mt-4 text-teal-500 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-50 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                            Написать в WhatsApp
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>

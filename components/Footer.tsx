@@ -1,7 +1,15 @@
 import Image from 'next/image';
-import { FaFacebookF, FaInstagram, FaYoutube, FaLinkedinIn } from 'react-icons/fa';
 
 export default function Footer() {
+    const sections = [
+        { label: "Услуги", id: "services-section" },
+        { label: "О нас", id: "about-us-section" },
+        { label: "Наши доктора", id: "doctors-carousel-section" },
+        { label: "Почему мы?", id: "why-us-section" },
+        { label: "Отзывы", id: "testimonials-section" },
+        { label: "Контакты", id: "contact-info-section" },
+    ];
+
     return (
         <footer className="bg-gray-900 text-[#03989E] py-16">
             <div className="container mx-auto px-4 flex flex-col lg:flex-row justify-between items-center lg:items-start">
@@ -16,58 +24,67 @@ export default function Footer() {
                         />
                     </div>
                     {/* Social Icons */}
-                    <div className="flex space-x-4">
-                        <a
-                            href="#"
-                            className="text-[#03989E] hover:text-teal-300 transition"
-                            aria-label="Facebook"
-                        >
-                            <FaFacebookF size={20} />
+                    <div className="flex flex-wrap items-center  justify-center space-x-4 sm:space-x-6">
+                        {/* Social Media Icons */}
+                        <a href="https://wa.me/+77002674866" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src="/temp/whatsapp-icon.svg"
+                                alt="WhatsApp"
+                                width={20}
+                                height={20}
+                            />
+                        </a>
+                        <a href="https://www.instagram.com/rich_smile_stom/" target="_blank" rel="noopener noreferrer">
+                            <Image
+                                src="/temp/instagram-icon.svg"
+                                alt="Instagram"
+                                width={20}
+                                height={20}
+                            />
                         </a>
                         <a
-                            href="#"
-                            className="text-[#03989E] hover:text-teal-300 transition"
-                            aria-label="Instagram"
+                            href="https://2gis.kz/almaty/firm/70000001090394350?m=76.904858%2C43.247647%2F13.08"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         >
-                            <FaInstagram size={20} />
+                            <Image
+                                src="/temp/2gis-icon.svg"
+                                alt="2GIS"
+                                width={20}
+                                height={20}
+                            />
                         </a>
-                        <a
-                            href="#"
-                            className="text-[#03989E] hover:text-teal-300 transition"
-                            aria-label="YouTube"
-                        >
-                            <FaYoutube size={20} />
+                        <a href="/contact">
+                            <Image
+                                src="/temp/phonee-icon.svg"
+                                alt="Phone"
+                                width={20}
+                                height={20}
+                            />
                         </a>
+                        {/* Phone Number */}
                         <a
-                            href="#"
-                            className="text-[#03989E] hover:text-teal-300 transition"
-                            aria-label="LinkedIn"
+                            href="tel:+77002674866"
+                            className="text-sm text-white font-medium block sm:inline"
                         >
-                            <FaLinkedinIn size={20} />
+                            +7 (700) 267-48-66
                         </a>
                     </div>
                 </div>
 
                 {/* Links Section */}
                 <div className="text-center lg:text-left">
-                    <h3 className="text-white text-lg font-semibold mb-4">О нас</h3>
-                    <ul className="space-y-2 text-[#03989E]">
-                        <li>
-                            <a href="#" className="hover:text-teal-300 transition">
-                                Свяжитесь с нами
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="hover:text-teal-300 transition">
-                                Услуги
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" className="hover:text-teal-300 transition">
-                                Команда
-                            </a>
-                        </li>
-                    </ul>
+                    {sections.map((item) => (
+                        <a
+                            href={`#${item.id}`}
+                            key={item.id}
+                            className="text-white text-lg font-medium mb-4 hover:text-[#03989E] transition-colors"
+                        >
+                            <p>{item.label}</p>
+                            <br/>
+                        </a>
+
+                    ))}
                 </div>
             </div>
 

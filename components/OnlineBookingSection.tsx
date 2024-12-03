@@ -10,16 +10,29 @@ export default function OnlineBookingSection() {
                     <p className="text-base md:text-lg leading-relaxed mb-6">
                         Чтобы записаться к нам на бесплатный приём, напишите нам в WhatsApp
                     </p>
-                    <a
-                        href="#"
-                        className="inline-block px-6 py-3 text-white bg-[#03989E] rounded-lg font-semibold hover:bg-teal-500 transition border-2 border-white"
-                    >
-                        НАПИСАТЬ
-                    </a>
+                    <div className="flex flex-wrap gap-4 justify-center sm:justify-start">
+                        <a href="tel:+77002674866">
+                            <button
+                                className="mt-4 text-[#03989E] bg-white px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-600 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                                Позвонить
+                            </button>
+                        </a>
+                        <a
+                            href="https://wa.me/+77002674866"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button
+                                className="border border-[#03989E] bg-white mt-4 text-[#03989E] px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-50 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                                Написать в WhatsApp
+                            </button>
+                        </a>
+                    </div>
                 </div>
 
                 {/* Right Section */}
-                <div className="lg:w-1/2 flex flex-col items-center lg:items-end justify-center text-center lg:text-right">
+                <div
+                    className="lg:w-1/2 flex flex-col items-center lg:items-end justify-center text-center lg:text-right">
                     <div className="mb-6">
                         <p className="text-lg font-medium mb-2">
                             <span className="block text-[24px] md:text-[30px] font-bold">Адрес:</span>
@@ -34,7 +47,7 @@ export default function OnlineBookingSection() {
                     </div>
                     <div>
                         <p className="text-[28px] md:text-[35px] font-bold">
-                            +7 (777) 123-12-34
+                            +7 (700) 267-48-66
                         </p>
                     </div>
                 </div>

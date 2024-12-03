@@ -12,7 +12,7 @@ export default function StickyTopBar() {
                         width={20}
                         height={20}
                     />
-                    <span className="text-sm">г.Алматы,</span>
+                    <span className="text-sm">г.Алматы, пр.Назарбаева 161</span>
                 </div>
 
                 {/* Availability */}
@@ -29,7 +29,7 @@ export default function StickyTopBar() {
                 {/* Social Media + Contact */}
                 <div className="flex flex-wrap items-center  justify-center space-x-4 sm:space-x-6">
                     {/* Social Media Icons */}
-                    <a href="https://wa.me/+77087638667" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/+77002674866" target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/temp/whatsapp-icon.svg"
                             alt="WhatsApp"
@@ -37,7 +37,7 @@ export default function StickyTopBar() {
                             height={20}
                         />
                     </a>
-                    <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.instagram.com/rich_smile_stom/" target="_blank" rel="noopener noreferrer">
                         <Image
                             src="/temp/instagram-icon.svg"
                             alt="Instagram"
@@ -67,10 +67,10 @@ export default function StickyTopBar() {
                     </a>
                     {/* Phone Number */}
                     <a
-                        href="tel:+77755699428"
+                        href="tel:+77002674866"
                         className="text-sm font-medium block sm:inline"
                     >
-                        +7 (775) 569-94-28
+                        +7 (700) 267-48-66
                     </a>
                 </div>
             </div>

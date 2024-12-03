@@ -4,26 +4,44 @@ export default function WhyUsSection() {
     const services = [
         {
             id: 1,
-            title: 'Лучший сервис',
-            description: 'Лучший сервис Лучший сервис Лучший сервис',
+            title: 'Профессионализм и опыт',
+            description: 'Наша команда состоит из высококвалифицированных стоматологов с многолетним опытом работы в различных областях стоматологии.',
             image: '/temp/service1.png',
         },
         {
             id: 2,
-            title: 'Лучший сервис',
-            description: 'Лучший сервис Лучший сервис Лучший сервис',
+            title: 'Индивидуальный подход',
+            description: 'Мы понимаем, что каждый пациент уникален, и всегда стремимся к индивидуальному подходу в лечении.',
             image: '/temp/service2.png',
         },
         {
             id: 3,
-            title: 'Лучший сервис',
-            description: 'Лучший сервис Лучший сервис Лучший сервис',
+            title: 'Современное оборудование и технологии',
+            description: 'Мы используем только передовые стоматологические технологии и оборудование.',
             image: '/temp/service3.png',
         },
         {
             id: 4,
-            title: 'Лучший сервис',
-            description: 'Лучший сервис Лучший сервис Лучший сервис',
+            title: 'Безболезненные процедуры',
+            description: 'Мы заботимся о вашем комфорте и минимизируем болевые ощущения при любых манипуляциях.',
+            image: '/temp/service1.png',
+        },
+        {
+            id: 5,
+            title: 'Чистота и безопасность',
+            description: 'Мы строго соблюдаем санитарные нормы и гарантируем полную безопасность для наших пациентов.',
+            image: '/temp/service1.png',
+        },
+        {
+            id: 6,
+            title: 'Доступные цены и гибкая система оплаты',
+            description: 'Мы предлагаем конкурентоспособные цены на все виды стоматологических услуг.',
+            image: '/temp/service1.png',
+        },
+        {
+            id: 7,
+            title: 'Положительные отзывы пациентов',
+            description: 'Наша клиника гордится множеством довольных пациентов, которые доверяют нам свою улыбку.',
             image: '/temp/service1.png',
         },
     ];
@@ -33,16 +51,15 @@ export default function WhyUsSection() {
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <div className="text-center">
-                    <h2 className="text-3xl font-bold text-gray-800">Почему мы?</h2>
-                    <p className="text-gray-600 mt-2">Почему нам верят?</p>
+                    <h2 className="text-3xl font-bold text-gray-800">Почему выбирают нас?</h2>
                 </div>
 
-                {/* Services Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+                {/* Horizontal Scrollable Cards */}
+                <div className="flex overflow-x-scroll mt-8 gap-6 scrollbar-hide">
                     {services.map((service) => (
                         <div
                             key={service.id}
-                            className="bg-white rounded-lg shadow-lg border border-gray-200 p-4 text-center"
+                            className="flex-shrink-0 bg-white rounded-lg shadow-lg border border-gray-200 p-4 w-72 text-center"
                         >
                             <Image
                                 src={service.image}
@@ -54,20 +71,28 @@ export default function WhyUsSection() {
                             <h3 className="text-lg font-semibold text-gray-800">
                                 {service.title}
                             </h3>
-                            <p className="text-sm text-gray-600 mt-1">{service.description}</p>
+                            <p className="text-sm text-gray-600 mt-2">{service.description}</p>
                         </div>
                     ))}
                 </div>
 
-                {/* WhatsApp Button */}
-                <div className="text-center mt-8">
+                {/* Equal Sized Buttons */}
+                <div className="flex flex-wrap gap-4 justify-center">
+                    <a href="tel:+77002674866">
+                        <button
+                            className="bg-[#03989E] mt-4 text-white px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-600 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                            Позвонить
+                        </button>
+                    </a>
                     <a
-                        href="https://wa.me/"
+                        href="https://wa.me/+77002674866"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-6 py-3 text-white bg-[#03989E] rounded-lg hover:bg-teal-600 transition"
                     >
-                        Написать в WhatsApp
+                        <button
+                            className="border border-[#03989E] mt-4 text-teal-500 px-5 py-2.5 sm:px-7 sm:py-3.5 rounded-lg hover:bg-teal-50 transition text-sm sm:text-base lg:text-lg w-full sm:w-auto">
+                            Написать в WhatsApp
+                        </button>
                     </a>
                 </div>
             </div>
